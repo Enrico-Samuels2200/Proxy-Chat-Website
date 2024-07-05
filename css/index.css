@@ -1,6 +1,126 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     color: white;
+    list-style: none;
+    text-decoration: none;
 }
+
+body {
+    background-color: rgb(211, 109, 50);
+}
+
+/* ----------------------- */                      /* ----------------------- */   
+/* ------------------------ Header & Navigation Bar ------------------------ */
+/* ----------------------- */                     /* ----------------------- */
+
+header {
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(37, 37, 37);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+nav {
+    width: 40%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 6px;
+}
+
+nav ul li {
+    font-size: clamp(17px, 20%, 20px);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.nav li:first-child > a {
+    margin: 0;
+}
+
+.active {
+    color: rgb(70, 163, 192);
+}
+
+.mobile {
+    display: none;
+    background-color: red;
+}
+
+header button {
+    background-color: red;
+    padding: 0.5% 1.5%;
+    border: 0px;
+    border-radius: 3px;
+}
+
+#hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around; 
+    background-color: rgb(0, 0, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 5%;
+}
+
+.hamburger-line {
+    height: 1px;
+    width: 100%;
+    background-color: red;
+}
+
+/* ---------------------- */             /* ---------------------- */   
+/* ------------------------ Media Queries ------------------------ */
+/* ---------------------- */             /* ---------------------- */
+
+/* ------ Max 1024px ------ */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        width: 50%
+    }
+
+}
+
+/* ------ Max 425px ------ */
+@media screen and (min-width: 260px) and (max-width: 769px) {
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: none;
+    }
+
+    #hamburger-btn {
+        display: flex;
+    }
+
+    #header-download-btn {
+        display: none;
+    }
+}
+
+/* ------ Max 366px ------ */
+@media screen and (max-width: 366px) and (min-width: 260px) {}

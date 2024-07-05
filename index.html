@@ -14,24 +14,48 @@
     </head>
     <body>
         <header>
-            <nav>
+            <div id="logo"></div>
+            <nav class="nav mobile">
                 <ul>
                     <li>
-                        <a href="#"></a>
+                        <a href="#" class="active">Home</a>
                     </li>
                     
                     <li>
-                        <a href="#"></a>
+                        <a href="#">About</a>
                     </li>
 
                     <li>
-                        <a href="#"></a>
+                        <a href="#">Contact</a>
                     </li>
                 </ul>
-                <button>
-                    Download
-                </button>
             </nav>
+            
+            <nav class="nav desktop">
+                <ul>
+                    <li>
+                        <a href="#" class="active">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button id="header-download-btn">
+                Download
+            </button>
+
+            <button id="hamburger-btn">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
         </header>
 
         <section id="hero">
